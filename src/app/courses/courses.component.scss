@@ -1,0 +1,92 @@
+// .col-lg-4-mb-4 {
+//     display: flex;
+// }.box {
+//     background-color: #fff;
+//     padding: 2vh 4vh;
+//     height: 40vh;
+//     .course-image {
+//         height: 30vh;
+//         width: 100%;
+//         background-color: #3b99ae;
+//         background-size: 100%;
+//         img{
+//             height: 100%;
+//             width: 100%;
+//             object-fit: cover;
+//         }
+//     }
+    
+//     p {
+//         font-size: 0.9rem;
+//     }
+// }
+
+// button {
+//     position: absolute;
+//     margin-left: -5vh;
+// }
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+    justify-content: center; /* Center the cards horizontally */
+    margin: 20px 0; /* Margin for the container */
+    padding: 0 15px; /* Padding on left and right */
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 1vh; /* Adjust padding for the card */
+    height: 50vh; /* Adjust height to fit new content */
+    flex: 0 1 calc(23% - 20px); /* Adjust width for 4 cards per row with space */
+    margin: 15px; /* Margin between cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: relative; /* Position relative for the delete button */
+    overflow: hidden; /* Prevents overflow of image */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    border: 2px solid rgb(215, 213, 215); /* Black border */
+}
+
+.course-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Move card upward and slightly enlarge on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.course-image {
+    height: 25vh; /* Adjust height for the image */
+    width: 100%;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.course-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures image covers the container */
+}
+
+.course-content {
+    background-color: #f0f0f0; /* Light grey background for title and description */
+    padding: 10px; /* Padding for content */
+    border-radius: 0 0 10px 10px; /* Rounded corners for bottom */
+}
+
+.course-content h4 {
+    color: black; /* Default color for title */
+    transition: color 0.3s; /* Smooth transition for title color change */
+}
+
+.course-content h4:hover {
+    color: blue; /* Change title color on hover */
+}
+
+p {
+    font-size: 0.9rem; /* Adjust font size */
+}
+
+.delete-button {
+    position: absolute; /* Absolute positioning for the button */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    z-index: 1; /* Ensure it’s on top of the image */
+}

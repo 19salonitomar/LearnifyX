@@ -1,0 +1,25 @@
+.footer {
+    background: linear-gradient(to right, rgb(247, 206, 212), rgb(245, 175, 245), rgb(148, 156, 240));
+    color: #111111;
+    padding: 4vh 0;
+    a {
+        color: #f8f9fa;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(61, 134, 211);
+    }
+    h5 {
+        margin-bottom: 2vh;
+        font-weight: bold;
+    }
+    .social-icons {
+        a {
+            color: #111111;
+            font-size: 1.5rem;
+        }
+        a:hover {
+            color:#f8f9fa;
+        }
+    }
+}

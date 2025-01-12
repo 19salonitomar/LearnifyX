@@ -1,0 +1,62 @@
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 95vh;
+}
+
+.main-content {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    h1 {
+        font-style: 4rem;
+    }
+}
+
+.description {
+    font-size: 1rem; /* Adjust size as needed */
+    color: #666; /* Lighter color for text */
+    margin: 15px 0; /* Margin for spacing */
+    text-align: center; /* Center align the paragraph */
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 18px; /* Space between buttons */
+    margin-top: 25px; /* Top margin */
+}
+
+.custom-btn {
+    border-radius: 25px !important; /* Rounded corners */
+    padding: 15px 25px !important; /* Normal size padding */
+}
+
+/* Button styles for each specific button */
+.custom-btn.courses {
+    background-color: rgb(155, 170, 251); /* Light blue background */
+    color: rgb(15, 15, 241); /* Dark blue text */
+}
+
+.custom-btn.projects {
+    background-color: rgb(245, 190, 230); /* Light pink background */
+    color: rgb(240, 19, 200); /* Dark pink text */
+}
+
+.custom-btn.certification {
+    background-color: rgb(241, 160, 199); /* Red background */
+    color: rgb(246, 13, 153); /* White text */
+}
+
+.custom-btn.practice {
+    background-color: rgb(189, 148, 239); /* Purple background */
+    color: rgb(129, 8, 242); /* White text */
+}
+
+.courses {
+    background-color: #ffff;
+    padding: 8vh 4vh ;
+}
